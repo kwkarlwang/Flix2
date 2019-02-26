@@ -17,7 +17,7 @@ class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = (movie["title"] as! String)
-        synopsisLabel.text = (movie["title"] as! String)
+        synopsisLabel.text = (movie["overview"] as! String)
         titleLabel.sizeToFit()
         synopsisLabel.sizeToFit()
         let baseUrl = "https://image.tmdb.org/t/p/w185"
